@@ -1,9 +1,8 @@
 public class CuentaAhorro extends Cuenta {
-    private final double INTERES = 3.0; // predefinido 3%
+    private double INTERES = 3.0;
 
     public CuentaAhorro(String numeroCuenta, Cliente propietario, double saldo) {
         super(numeroCuenta, propietario, saldo);
-        if (saldo < 100) throw new IllegalArgumentException("Saldo inicial mínimo: 100");
     }
 
     public void depositar(double monto) {

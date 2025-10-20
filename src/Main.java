@@ -17,7 +17,7 @@ public class Main {
             opcion = Integer.parseInt(br.readLine());
 
             switch (opcion) {
-                case 1: // Registrar administrador
+                case 1: //Registrar administrador
                     System.out.print("Nombre: ");
                     String n = br.readLine();
                     System.out.print("Cédula: ");
@@ -28,7 +28,7 @@ public class Main {
                     String p = br.readLine();
                     banco.registrarAdministrador(n, ci, c, p);
                     break;
-                case 2: // Login admin
+                case 2: //Login admin
                     System.out.print("Correo: ");
                     String mail = br.readLine();
                     System.out.print("Contraseña: ");
@@ -36,7 +36,7 @@ public class Main {
                     if (banco.loginAdministrador(mail, pass)) menuAdministrador(br, banco);
                     else System.out.println("Credenciales incorrectas");
                     break;
-                case 3: // Login cliente
+                case 3: //Login cliente
                     System.out.print("Correo: ");
                     String mailc = br.readLine();
                     System.out.print("Contraseña: ");
@@ -135,7 +135,7 @@ public class Main {
                     System.out.println("Cuenta creada correctamente.");
                     break;
 
-                case 3: // Transacciones
+                case 3: //Transacciones
                     if (cliente.getCuentas().isEmpty()) {
                         System.out.println("No tiene cuentas registradas.");
                         break;

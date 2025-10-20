@@ -3,7 +3,7 @@ public class CuentaCredito extends Cuenta {
     private String tipoCredito;
 
     public CuentaCredito(String numeroCuenta, Cliente propietario, double limiteCredito, String tipoCredito) {
-        super(numeroCuenta, propietario, 0); // siempre inicia en 0
+        super(numeroCuenta, propietario, 0);
         this.limiteCredito = limiteCredito;
         this.tipoCredito = tipoCredito;
     }
@@ -11,11 +11,11 @@ public class CuentaCredito extends Cuenta {
 
     public void depositar(double monto) {
         if (!activa) { System.out.println("Cuenta inactiva"); return; }
-        saldo += monto; // abono reduce deuda
+        saldo += monto;
         if (saldo > 0){
             saldo = 0;
             System.out.println("El saldo excede el monto pendiente a pagar");
-        }  // no puede tener saldo positivo
+        }
     }
 
 

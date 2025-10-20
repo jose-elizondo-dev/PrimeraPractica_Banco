@@ -8,7 +8,7 @@ public abstract class Cuenta {
         this.numeroCuenta = numeroCuenta;
         this.propietario = propietario;
         this.saldo = saldo;
-        this.activa = true; // por defecto activa
+        this.activa = true;
     }
 
     public String getNumeroCuenta() { return numeroCuenta; }

@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Banco {
     private Administrador administrador;
+    private Cliente cliente;
     private ArrayList<Cliente> clientes = new ArrayList<>();
     private ArrayList<Cuenta> cuentas = new ArrayList<>();
 
