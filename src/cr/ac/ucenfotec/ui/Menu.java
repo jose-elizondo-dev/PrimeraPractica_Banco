@@ -45,7 +45,7 @@ public class Menu {
                     ingresarCliente();
                     break;
                 case 4:
-                    System.out.println("¡Hasta luego!");
+                    System.out.println("Saliendo del banco");
                     break;
                 default:
                     System.out.println("Opción inválida");
